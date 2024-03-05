@@ -1,0 +1,17 @@
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\obj\Debug\net8.0-windows10.0.22621.0\RMS2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\obj\Debug\net8.0-windows10.0.22621.0\RMS2.AssemblyInfoInputs.cache
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\obj\Debug\net8.0-windows10.0.22621.0\RMS2.AssemblyInfo.cs
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\obj\Debug\net8.0-windows10.0.22621.0\RMS2.csproj.CoreCompileInputs.cache
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\bin\Debug\net8.0-windows10.0.22621.0\RMS2.exe
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\bin\Debug\net8.0-windows10.0.22621.0\RMS2.deps.json
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\bin\Debug\net8.0-windows10.0.22621.0\RMS2.runtimeconfig.json
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\bin\Debug\net8.0-windows10.0.22621.0\RMS2.dll
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\bin\Debug\net8.0-windows10.0.22621.0\RMS2.pdb
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\bin\Debug\net8.0-windows10.0.22621.0\Microsoft.Windows.SDK.NET.dll
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\bin\Debug\net8.0-windows10.0.22621.0\WinRT.Runtime.dll
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\obj\Debug\net8.0-windows10.0.22621.0\RMS2.csproj.Up2Date
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\obj\Debug\net8.0-windows10.0.22621.0\RMS2.dll
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\obj\Debug\net8.0-windows10.0.22621.0\refint\RMS2.dll
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\obj\Debug\net8.0-windows10.0.22621.0\RMS2.pdb
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\obj\Debug\net8.0-windows10.0.22621.0\RMS2.genruntimeconfig.cache
+C:\Users\mrezzoli\source\repos\RMS2\RMS2\obj\Debug\net8.0-windows10.0.22621.0\ref\RMS2.dll

@@ -1,0 +1,14 @@
+Changelog v. 2.0.2a - 31.01.2024 11:53
+It's about Time
+
+added the Log command
+	The Log command enables you to add own informations to the Log
+added the print command
+	Lets you print anything into the consolescreen.
+added the wait command
+	Lets you wait.
+added the time commandgroup, currently it has only one command
+	time query: Tells you the time.
+
+Error messages: 
+Added throwArgumentError and throwTooLittleArgumentError to handle issues regarding Arguments and sub commands. 

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CKVjG9q5dNyOQnxc4kx617+UlS20Q5idNlpCMMDt9uUf91qQIk9nEfRxG/BsrQeRj+t87eiso6OOVi/IePnjGA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\RMS2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mrezzoli\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22621.31\\microsoft.windows.sdk.net.ref.10.0.22621.31.nupkg.sha512"
+  ],
+  "logs": []
+}
