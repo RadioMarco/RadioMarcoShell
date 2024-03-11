@@ -45,7 +45,7 @@ namespace RMS2
                         break;
                     }
                 case "time":
-                    timecalcres.time.timeInterpreter(command);
+                    timecalcres.Time.timeInterpreter(command);
                     break;
                 case "list":
                     {
@@ -190,6 +190,59 @@ namespace RMS2
                             Files.WriteInFile(command);
                         }
                         break;
+                    }
+                case "ps":
+                    {
+                        WindowsCommandLineIntegration.RunInPowerShell(command);
+                        break;
+                    }
+                case "tune":
+                    {
+                        if (command.Length == 2)
+                        {
+                            if (command[1] == "help")
+                            {
+
+                            }
+                            Tune.Play();
+                        }
+                        else if (command.Length == 3)
+                        {
+                            Tune.Play(command[1]);
+                        }
+                        else if (command.Length == 4)
+                        {
+                            Tune.Play(command[1], command[2]);
+                        }
+                        else
+                        {
+                            Tune.Play(command[1], command[2], command[3]);
+                        }
+                        break;
+                    }
+                case "sudo":
+                    {
+                        break;
+                    }
+                case "thanks":
+                    {
+                        Console.WriteLine("No Problem :3");
+                        break;
+                    }
+                case "gf":
+                    {
+                        Console.WriteLine("I don't have a GF, I'm still a virgin :(");
+                        break;
+                    }
+                case "fu":
+                    {
+                        Console.WriteLine("Don't be rude. I'm just doing my Job, if somethink doesn't work, it's entierly your fault!");
+                            break;
+                    }
+                case "fuck":
+                    {
+                        Console.WriteLine("Problems can happen, don't worry.");
+                            break;
                     }
                 default:
                     return "-1 failed";

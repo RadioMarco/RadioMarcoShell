@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RMS2.timecalcres
 {
-    internal class time
+    internal class Time
     {
         public static string timeInterpreter(string[] command)
         {
@@ -51,11 +51,11 @@ namespace RMS2.timecalcres
                         }
                         else if (command.Length > 5)
                         {
-                            Console.WriteLine(TimeConversionTools.EndTime(StringTransformationTools.StringToDouble(command[2]), StringTransformationTools.StringToDouble(command[3]), StringTransformationTools.StringToDouble(command[4]), StringTransformationTools.StringToDouble(command[5])));
+                            Console.WriteLine(TimeConversionTools.Clean(TimeConversionTools.EndTime(StringTransformationTools.StringToDouble(command[2]), StringTransformationTools.StringToDouble(command[3]), StringTransformationTools.StringToDouble(command[4]), StringTransformationTools.StringToDouble(command[5]))));
                         }
                         else
                         {
-                            Console.WriteLine(TimeConversionTools.EndTime(StringTransformationTools.StringToDouble(command[2]), StringTransformationTools.StringToDouble(command[3]), StringTransformationTools.StringToDouble(command[4])));
+                            Console.WriteLine(TimeConversionTools.Clean(TimeConversionTools.EndTime(StringTransformationTools.StringToDouble(command[2]), StringTransformationTools.StringToDouble(command[3]), StringTransformationTools.StringToDouble(command[4]))));
                         }
                         break;
                     }

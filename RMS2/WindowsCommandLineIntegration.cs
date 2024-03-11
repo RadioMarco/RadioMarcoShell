@@ -44,11 +44,29 @@ namespace RMS2
                 Console.WriteLine("");
                 Error.throwCustomError("RMS2: The Command can't be executed. Windows doesn't recognize it.");
             }
+            Console.ReadKey();
             Console.WriteLine("RMS2: ");
         }
         public static void OpenInExplorer(string location)
         {
             Process.Start("explorer.exe",location);
+        }
+        public static void RunInPowerShell(string[] command)
+        {
+            Console.Write("PS: ");
+            try
+            {
+
+
+                Process.Start("powershell.exe", StringTransformationTools.StringResasembler(command));
+            }
+            catch (System.ComponentModel.Win32Exception)
+            {
+                Console.WriteLine("");
+                Error.throwCustomError("RMS2: The Command can't be executed. Windows doesn't recognize it.");
+            }
+            Console.ReadKey();
+            Console.WriteLine("RMS2: ");
         }
     }
 }

@@ -34,5 +34,22 @@ namespace RMS2
             Console.WriteLine("*Complex command with many arguments [command] help for more informations");
             
         }
+    public static void GetHelpTune()
+        {
+            Console.WriteLine("Mit tune kann man Töne abspielen:");
+            Console.WriteLine("Auf Windows kann man die Tonhöhe und länge anpassen: ");
+            Console.WriteLine("Syntax: tune [tonhöhe] [tonlänge] [oktave]");
+            Console.WriteLine("Für die Tonhöhe und Tonlänge gibt es ein paar Presets:");
+            Console.WriteLine("Ohne Parameter spielt es die Tonhöhe/frequenz 277 = Musik chord C# und die länge 400 (entspricht einer viertelsnote)");
+            Console.WriteLine("Als Parameter gibt es die Präfix = Tonhöhe (hz) = bezeichnung:  ");
+            Console.WriteLine("1  =  262 = C, 2 = 277 = C#,");
+            Console.WriteLine("3 = 294 = D,4 =  311 = D#, 5 = 330 = E,");
+            Console.WriteLine("6 = 349 = F, 7 = 370 = F#, 8 = 392 = G, 9 = 415 = G#");
+            Console.WriteLine("10 = A = 440, 11 = A# = 466, 12 = H(Englisch B) = 493 ");
+            Console.WriteLine("Präfix = Tonlänge (ms) = bezeichnung: ");
+            Console.WriteLine("1  = 1600 = ganzenote, 2 = 800 = halbenote, 4 = 400 = viertelsnote, 8 = 200 = achtelsnote, 16 = 100 =sechszehntelsnote  ");
+            Console.WriteLine("Auf anderen Platformen wird eine Fehlermeldung erscheinen. ");
+            Console.WriteLine("Oktaven: erste Oktave (C/C2) = 0.25, zweite Oktave c/C3 = 0.5, dritte Oktave (c'/C3) = 1, vierte Oktave (c''/C4) = 2, fünfte Oktave (c'''/C5) = 4 etc.  ");
+        }
     }
 }

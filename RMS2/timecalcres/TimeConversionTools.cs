@@ -34,7 +34,18 @@ namespace RMS2.timecalcres
         }
         public static double AddTimeTo(double initialTime, double timeToAdd)
         {
-            return initialTime + timeToAdd;
+           
+           double result = Math.Round(initialTime,2) + Math.Round(timeToAdd,2);
+            int hours = (int)result;
+            double minutes = result - hours;
+            if (minutes > 0.59)
+            {
+                hours++;
+                minutes = Math.Round(minutes,2) - 0.6;
+                result = hours + minutes;
+            }
+
+            return result;
         }
         public static double EndTime(double startTime, double breakStart,double breakEnd, double pensum = 8.1)
         {
@@ -42,6 +53,34 @@ namespace RMS2.timecalcres
             double remainingTime = CalcTimeDifference(morningSpent, pensum);
             return AddTimeTo(breakEnd, remainingTime);
 
+        }
+        public static string Clean(double time)
+        {
+            
+            string StringifiedTime = $"{time}" ;
+            if (StringifiedTime.Length == 1)
+            {
+                StringifiedTime = time + ".00";
+            }
+            else if (StringifiedTime.Length == 2)
+            {
+                StringifiedTime = time + ".00";
+            }
+            else if (StringifiedTime.Length == 3)
+            {
+                StringifiedTime = time + "0";
+            }
+            else if (StringifiedTime.Length == 4)
+            {
+                StringifiedTime = time + "0";
+            }
+            else
+            {
+                StringifiedTime = $"{time}";
+            }
+
+
+            return StringifiedTime;
         }
     }
 }
