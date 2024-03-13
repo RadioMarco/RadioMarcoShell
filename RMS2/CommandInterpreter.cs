@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Linq.Expressions;
 using System.Text;
+using Windows.ApplicationModel.ConversationalAgent;
 
 
 namespace RMS2
@@ -202,9 +203,12 @@ namespace RMS2
                         {
                             if (command[1] == "help")
                             {
-
+                                Help.GetHelpTune();
                             }
-                            Tune.Play();
+                            else
+                            {
+                                Tune.Play();
+                            }
                         }
                         else if (command.Length == 3)
                         {
@@ -220,10 +224,6 @@ namespace RMS2
                         }
                         break;
                     }
-                case "sudo":
-                    {
-                        break;
-                    }
                 case "thanks":
                     {
                         Console.WriteLine("No Problem :3");
@@ -236,13 +236,29 @@ namespace RMS2
                     }
                 case "fu":
                     {
-                        Console.WriteLine("Don't be rude. I'm just doing my Job, if somethink doesn't work, it's entierly your fault!");
+                        Console.WriteLine("Don't be rude. I'm just doing my Job, if something doesn't work, it's entierly your fault!");
                             break;
                     }
                 case "fuck":
                     {
                         Console.WriteLine("Problems can happen, don't worry.");
                             break;
+                    }
+                case "sudo":
+                    {
+                        if (command.Length == 1)
+                            Sudo.Say();
+                        else
+                            Sudo.Say(StringTransformationTools.StringToInt(command[1]));
+                        break;
+                    }
+                case "ascii":
+                    {
+                        if (command.Length > 1)
+                            ASCIIWriter.ASCIIWritingMachine(StringTransformationTools.StringResasembler(command));
+                        else
+                            ASCIIWriter.ASCIIWritingMachine();
+                        break;
                     }
                 default:
                     return "-1 failed";
