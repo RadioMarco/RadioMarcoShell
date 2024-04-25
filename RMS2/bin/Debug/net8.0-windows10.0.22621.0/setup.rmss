@@ -1,0 +1,6 @@
+# The Setup script for editing the Console's sourcecode 
+cd ../../../../.. 
+./ RMS2.sln 
+print done.
+exit 
+# end 

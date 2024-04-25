@@ -1,23 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Versioning;
 
 namespace RMS2
 {
+    [SupportedOSPlatform("windows")]
     internal class Tune
     {
         public static void Play(string tone = "277", string duration = "400", string octave = "1")
         {
-            if (System.OperatingSystem.IsWindows())
+
+            switch (tone)
             {
 
-            
-            switch(tone)
-            {
-
-                    case "1":
+                case "1":
                     {
                         tone = "262";
                         break;
@@ -64,20 +58,20 @@ namespace RMS2
                         break;
                     }
                 case "10":
-                        {
-                            tone = "440";
-                            break;
-                        }
+                    {
+                        tone = "440";
+                        break;
+                    }
                 case "11":
-                        {
-                            tone = "466";
-                            break;
-                        }
+                    {
+                        tone = "466";
+                        break;
+                    }
                 case "12":
-                        {
-                            tone = "493";
-                            break;
-                        }
+                    {
+                        tone = "493";
+                        break;
+                    }
                 default:
                     {
                         tone = "277";
@@ -85,7 +79,7 @@ namespace RMS2
                     }
 
             }
-            switch(duration)
+            switch (duration)
             {
                 case "1":
                     {
@@ -114,27 +108,23 @@ namespace RMS2
                     }
                 default:
                     {
-                        duration = $"{1600/4}";
+                        duration = $"{1600 / 4}";
                         break;
                     }
             }
-                double oktave = StringTransformationTools.StringToDouble(octave);
-            double ton = StringTransformationTools.StringToDouble(tone);
-            int length = StringTransformationTools.StringToInt(duration);
-                ton = ton * oktave;
-            Console.Beep((int) ton,length);
-            
+            double oktave = StringTools.StringToDouble(octave);
+            double ton = StringTools.StringToDouble(tone);
+            int length = StringTools.StringToInt(duration);
+            ton = ton * oktave;
+            Console.Beep((int)ton, length);
 
-           
-            }
-            else
-            {
-                Error.throwCustomError("Dein Betriebssystem ist NICHT Windows, dieser Befehl funktioniert  nur auf Windows. Entschuldigung, für die unannähmlichkeiten.");
-            }
+
+
         }
-
     }
 
-    
-    
+
+
+
+
 }

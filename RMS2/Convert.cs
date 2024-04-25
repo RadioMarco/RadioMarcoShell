@@ -13,21 +13,21 @@ namespace RMS2
                 case "ft":
                     {
                         if (EndUnit == "cm")
-                           result = FootToCentiMeter(StringTransformationTools.StringToDouble(baseUnitValue));
+                           result = FootToCentiMeter(StringTools.StringToDouble(baseUnitValue));
                         if (EndUnit == "inch")
-                            result = FootToInch(StringTransformationTools.StringToDouble(baseUnitValue));
+                            result = FootToInch(StringTools.StringToDouble(baseUnitValue));
                         if (EndUnit == "yard")
-                            result = FootToYard(StringTransformationTools.StringToDouble(baseUnitValue));
+                            result = FootToYard(StringTools.StringToDouble(baseUnitValue));
                         break;
                     }
                 case "cm":
                     {
                         if (EndUnit == "ft")
-                            CentiMeterToFoot(StringTransformationTools.StringToDouble(baseUnitValue));
+                            CentiMeterToFoot(StringTools.StringToDouble(baseUnitValue));
                         if (EndUnit == "inch")
-                            CentiMeterToInch(StringTransformationTools.StringToDouble(baseUnitValue));
+                            CentiMeterToInch(StringTools.StringToDouble(baseUnitValue));
                         if (EndUnit == "yard")
-                            CentiMeterToYard(StringTransformationTools.StringToDouble(baseUnitValue));
+                            CentiMeterToYard(StringTools.StringToDouble(baseUnitValue));
                         break;
                     }
             }

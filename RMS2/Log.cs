@@ -15,7 +15,7 @@ namespace RMS2
         /// <param name="message">Text welcher im Log angezeigt werden soll</param>
         public static void Message(string message)
         {
-            using StreamWriter swMessage = File.AppendText($"{Program.initialPath}\\log.rmsl");
+            using StreamWriter swMessage = File.AppendText($"{Environment.GetEnvironmentVariable("RMS2logs")}\\log.rmsl");
             if (message == "start")
             {
                 
@@ -36,7 +36,7 @@ namespace RMS2
         }
         public static void Command(string command)
         {
-            using StreamWriter swCommand = File.AppendText($"{Program.commandPath}\\commands.rmsl");
+            using StreamWriter swCommand = File.AppendText($"{Environment.GetEnvironmentVariable("RMS2logs")}\\commands.rmsl");
             swCommand.WriteLine(command);
             swCommand.Dispose();
 

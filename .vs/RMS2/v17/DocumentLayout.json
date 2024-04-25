@@ -3,36 +3,104 @@
   "WorkspaceRootPath": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\stringtools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\stringtools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\timecalcres\\timetools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\timecalcres\\timetools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\commandinterpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\commandinterpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\files.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\files.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\rms2.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\rms2.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\asciiwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\asciiwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\splash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\executescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\executescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\rmobnparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\rmobnparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\cmdrun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\cmdrun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\sudo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\sudo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\amatrix\\matrix101.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\amatrix\\matrix101.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\files.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\files.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\explorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\explorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\changedirectory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\changedirectory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\windowscommandlineintegration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\windowscommandlineintegration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\aliasinterpret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\aliasinterpret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\timecalcres\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\timecalcres\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\convert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\convert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\tune.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\tune.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\colorchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\colorchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\rms2.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\rms2.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\readfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,28 +111,8 @@
       "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\wait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\colorchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\colorchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\stringtransformationtools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\stringtransformationtools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\rms2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\rms2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\timecalcres\\timeconversiontools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\timecalcres\\timeconversiontools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|c:\\users\\mrezzoli\\source\\repos\\rms2\\rms2\\amatrix\\matrix101.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F805D84-3412-4B28-8626-F24A9A3A2CB7}|RMS2\\RMS2.csproj|solutionrelative:rms2\\amatrix\\matrix101.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,35 +122,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Program.cs",
-              "RelativeDocumentMoniker": "RMS2\\Program.cs",
-              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Program.cs",
-              "RelativeToolTip": "RMS2\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T10:10:44.552Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CommandInterpreter.cs",
-              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\CommandInterpreter.cs",
-              "RelativeDocumentMoniker": "RMS2\\CommandInterpreter.cs",
-              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\CommandInterpreter.cs",
-              "RelativeToolTip": "RMS2\\CommandInterpreter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ0AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T13:36:52.978Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -121,19 +142,147 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Files.cs",
-              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Files.cs",
-              "RelativeDocumentMoniker": "RMS2\\Files.cs",
-              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Files.cs",
-              "RelativeToolTip": "RMS2\\Files.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE0AAAANAAAA",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Program.cs",
+              "RelativeDocumentMoniker": "RMS2\\Program.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Program.cs",
+              "RelativeToolTip": "RMS2\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T08:24:08.092Z"
+              "WhenOpened": "2024-02-21T10:10:44.552Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "CommandInterpreter.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\CommandInterpreter.cs",
+              "RelativeDocumentMoniker": "RMS2\\CommandInterpreter.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\CommandInterpreter.cs",
+              "RelativeToolTip": "RMS2\\CommandInterpreter.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAnwEgAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T13:36:52.978Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ASCIIWriter.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\ASCIIWriter.cs",
+              "RelativeDocumentMoniker": "RMS2\\ASCIIWriter.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\ASCIIWriter.cs*",
+              "RelativeToolTip": "RMS2\\ASCIIWriter.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T13:07:10.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\StartUp.cs",
+              "RelativeDocumentMoniker": "RMS2\\StartUp.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\StartUp.cs*",
+              "RelativeToolTip": "RMS2\\StartUp.cs*",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T13:14:28.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AliasInterpret.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\AliasInterpret.cs",
+              "RelativeDocumentMoniker": "RMS2\\AliasInterpret.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\AliasInterpret.cs",
+              "RelativeToolTip": "RMS2\\AliasInterpret.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAmwDEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T15:23:51.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Tune.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Tune.cs",
+              "RelativeDocumentMoniker": "RMS2\\Tune.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Tune.cs",
+              "RelativeToolTip": "RMS2\\Tune.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T09:34:15.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Help.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Help.cs",
+              "RelativeDocumentMoniker": "RMS2\\Help.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Help.cs",
+              "RelativeToolTip": "RMS2\\Help.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAADwvywAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T09:58:47.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Error.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Error.cs",
+              "RelativeDocumentMoniker": "RMS2\\Error.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Error.cs",
+              "RelativeToolTip": "RMS2\\Error.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T15:24:02.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RMS2",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\RMS2.csproj",
+              "RelativeDocumentMoniker": "RMS2\\RMS2.csproj",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\RMS2.csproj",
+              "RelativeToolTip": "RMS2\\RMS2.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-21T10:13:54.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StringTools.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\StringTools.cs",
+              "RelativeDocumentMoniker": "RMS2\\StringTools.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\StringTools.cs",
+              "RelativeToolTip": "RMS2\\StringTools.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wCAAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T12:13:20.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Splash.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Splash.cs",
+              "RelativeDocumentMoniker": "RMS2\\Splash.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Splash.cs",
+              "RelativeToolTip": "RMS2\\Splash.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAACMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T12:06:10.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "RMOBNParser.cs",
               "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\RMOBNParser.cs",
               "RelativeDocumentMoniker": "RMS2\\RMOBNParser.cs",
@@ -145,66 +294,156 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Wait.cs",
-              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Wait.cs",
-              "RelativeDocumentMoniker": "RMS2\\Wait.cs",
-              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Wait.cs",
-              "RelativeToolTip": "RMS2\\Wait.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T07:17:26.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StartUp.cs",
-              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\StartUp.cs",
-              "RelativeDocumentMoniker": "RMS2\\StartUp.cs",
-              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\StartUp.cs",
-              "RelativeToolTip": "RMS2\\StartUp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T13:14:28.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Splash.cs",
-              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Splash.cs",
-              "RelativeDocumentMoniker": "RMS2\\Splash.cs",
-              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Splash.cs",
-              "RelativeToolTip": "RMS2\\Splash.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T12:06:10.731Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RMS2",
-              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\RMS2.csproj",
-              "RelativeDocumentMoniker": "RMS2\\RMS2.csproj",
-              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\RMS2.csproj",
-              "RelativeToolTip": "RMS2\\RMS2.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-02-21T10:13:54.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CmdRun.cs",
-              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\CmdRun.cs",
-              "RelativeDocumentMoniker": "RMS2\\CmdRun.cs",
-              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\CmdRun.cs",
-              "RelativeToolTip": "RMS2\\CmdRun.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAkwDAAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T14:45:32.036Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "Sudo.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Sudo.cs",
+              "RelativeDocumentMoniker": "RMS2\\Sudo.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Sudo.cs",
+              "RelativeToolTip": "RMS2\\Sudo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T13:39:25.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WindowsCommandLineIntegration.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\WindowsCommandLineIntegration.cs",
+              "RelativeDocumentMoniker": "RMS2\\WindowsCommandLineIntegration.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\WindowsCommandLineIntegration.cs",
+              "RelativeToolTip": "RMS2\\WindowsCommandLineIntegration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T14:45:32.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TimeTools.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\timecalcres\\TimeTools.cs",
+              "RelativeDocumentMoniker": "RMS2\\timecalcres\\TimeTools.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\timecalcres\\TimeTools.cs",
+              "RelativeToolTip": "RMS2\\timecalcres\\TimeTools.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T10:12:42.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Network.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Network.cs",
+              "RelativeDocumentMoniker": "RMS2\\Network.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Network.cs",
+              "RelativeToolTip": "RMS2\\Network.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T12:35:06.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "executeScript.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\executeScript.cs",
+              "RelativeDocumentMoniker": "RMS2\\executeScript.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\executeScript.cs",
+              "RelativeToolTip": "RMS2\\executeScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T07:25:03.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Calculator.cs",
+              "RelativeDocumentMoniker": "RMS2\\Calculator.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Calculator.cs",
+              "RelativeToolTip": "RMS2\\Calculator.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T07:00:43.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Files.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Files.cs",
+              "RelativeDocumentMoniker": "RMS2\\Files.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Files.cs",
+              "RelativeToolTip": "RMS2\\Files.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAgwEcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T08:24:08.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Matrix101.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\amatrix\\Matrix101.cs",
+              "RelativeDocumentMoniker": "RMS2\\amatrix\\Matrix101.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\amatrix\\Matrix101.cs",
+              "RelativeToolTip": "RMS2\\amatrix\\Matrix101.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwAUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T14:32:33.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Explorer.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Explorer.cs",
+              "RelativeDocumentMoniker": "RMS2\\Explorer.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Explorer.cs",
+              "RelativeToolTip": "RMS2\\Explorer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T12:11:45.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ChangeDirectory.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\ChangeDirectory.cs",
+              "RelativeDocumentMoniker": "RMS2\\ChangeDirectory.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\ChangeDirectory.cs",
+              "RelativeToolTip": "RMS2\\ChangeDirectory.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA6wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T15:23:53.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Time.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\timecalcres\\Time.cs",
+              "RelativeDocumentMoniker": "RMS2\\timecalcres\\Time.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\timecalcres\\Time.cs",
+              "RelativeToolTip": "RMS2\\timecalcres\\Time.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAmwFEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T10:12:40.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Convert.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Convert.cs",
+              "RelativeDocumentMoniker": "RMS2\\Convert.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Convert.cs",
+              "RelativeToolTip": "RMS2\\Convert.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T15:23:31.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "ColorChange.cs",
               "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\ColorChange.cs",
               "RelativeDocumentMoniker": "RMS2\\ColorChange.cs",
@@ -216,7 +455,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 26,
+              "Title": "Wait.cs",
+              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Wait.cs",
+              "RelativeDocumentMoniker": "RMS2\\Wait.cs",
+              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\Wait.cs",
+              "RelativeToolTip": "RMS2\\Wait.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T07:17:26.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "ReadFile.cs",
               "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\ReadFile.cs",
               "RelativeDocumentMoniker": "RMS2\\ReadFile.cs",
@@ -228,43 +480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Time.cs",
-              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\timecalcres\\Time.cs",
-              "RelativeDocumentMoniker": "RMS2\\timecalcres\\Time.cs",
-              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\timecalcres\\Time.cs",
-              "RelativeToolTip": "RMS2\\timecalcres\\Time.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAgwEEAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T10:12:40.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StringTransformationTools.cs",
-              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\StringTransformationTools.cs",
-              "RelativeDocumentMoniker": "RMS2\\StringTransformationTools.cs",
-              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\StringTransformationTools.cs",
-              "RelativeToolTip": "RMS2\\StringTransformationTools.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T12:13:20.511Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Matrix101.cs",
-              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\amatrix\\Matrix101.cs",
-              "RelativeDocumentMoniker": "RMS2\\amatrix\\Matrix101.cs",
-              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\amatrix\\Matrix101.cs",
-              "RelativeToolTip": "RMS2\\amatrix\\Matrix101.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T14:32:33.929Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 27,
               "Title": "RMS2.csproj",
               "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\RMS2.csproj",
               "RelativeDocumentMoniker": "RMS2\\RMS2.csproj",
@@ -273,18 +489,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-02-21T10:13:44.849Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TimeConversionTools.cs",
-              "DocumentMoniker": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\timecalcres\\TimeConversionTools.cs",
-              "RelativeDocumentMoniker": "RMS2\\timecalcres\\TimeConversionTools.cs",
-              "ToolTip": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\timecalcres\\TimeConversionTools.cs",
-              "RelativeToolTip": "RMS2\\timecalcres\\TimeConversionTools.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T10:12:42.89Z"
             }
           ]
         }

@@ -17,7 +17,7 @@ namespace RMS2
             }
             else
             {
-                waitingTime = StringTransformationTools.StringToInt(command[1]);
+                waitingTime = StringTools.StringToInt(command[1]);
             }
 
             Thread.Sleep(waitingTime);
@@ -25,10 +25,10 @@ namespace RMS2
             {
                 int repeatSplash;
                 string textSplash = "RADIOMARCO!";
-                repeatSplash = StringTransformationTools.StringToInt(command[2]);
+                repeatSplash = StringTools.StringToInt(command[2]);
                 if (command.Length > 3)
                 {
-                    textSplash = StringTransformationTools.StringResasembler(command, 3).ToUpper();
+                    textSplash = StringTools.StringResasembler(command, 3).ToUpper();
                 }
                 for (int i = 0; i < repeatSplash; i++)
                 {

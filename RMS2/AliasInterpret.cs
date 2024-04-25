@@ -45,6 +45,8 @@ namespace RMS2
                 command = "open";
             if (command == "nano")
                 command = "write";
+            if (command == "ps:")
+                command = "ps";
 
             return command;
         }

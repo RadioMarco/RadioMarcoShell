@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.Versioning;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace RMS2
 {
+    [SupportedOSPlatform("windows")]
     internal class WindowsCommandLineIntegration
     {
-        public static void Run(string[] command)
+        public static void Run(string[] command,bool isinSkript = false)
         {
             //string oldDir = Directory.GetCurrentDirectory();
             //Directory.SetCurrentDirectory("C:\\");
@@ -22,6 +24,14 @@ namespace RMS2
                 }
                 else
                 {
+                    if (isinSkript)
+                    {
+                        if (command[1] == "shutdown")
+                        {
+                            Error.throwSkriptExecutionForbiden("run shutdown");
+                            command[1] = "";
+                        }
+                    }
                     Console.Write("CMD: ");
                     if (command.Length == 2)
                     {
@@ -33,7 +43,7 @@ namespace RMS2
                     }
                     else if (command.Length > 3)
                     {
-                        Process.Start(command[1], StringTransformationTools.StringResasembler(command,2));
+                        Process.Start(command[1], StringTools.StringResasembler(command,2));
                     }
 
                     
@@ -58,7 +68,7 @@ namespace RMS2
             {
 
 
-                Process.Start("powershell.exe", StringTransformationTools.StringResasembler(command));
+                Process.Start("powershell.exe", StringTools.StringResasembler(command));
             }
             catch (System.ComponentModel.Win32Exception)
             {

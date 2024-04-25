@@ -23,7 +23,7 @@ namespace RMS2.timecalcres
                 case "todecimal":
                     if (command.Length > 2)
                     {
-                        Console.WriteLine(TimeConversionTools.RegularToDecimalTime(StringTransformationTools.StringToDouble(command[2])));
+                        Console.WriteLine(TimeTools.RegularToDecimalTime(StringTools.StringToDouble(command[2])));
                         break;
                     }
                     else
@@ -34,7 +34,7 @@ namespace RMS2.timecalcres
                 case "tonormal":
                     if (command.Length > 2)
                     {
-                        Console.WriteLine(TimeConversionTools.DecimalToRegularTime(StringTransformationTools.StringToDouble(command[2])));
+                        Console.WriteLine(TimeTools.DecimalToRegularTime(StringTools.StringToDouble(command[2])));
                         break;
                     }
                     else
@@ -51,11 +51,11 @@ namespace RMS2.timecalcres
                         }
                         else if (command.Length > 5)
                         {
-                            Console.WriteLine(TimeConversionTools.Clean(TimeConversionTools.EndTime(StringTransformationTools.StringToDouble(command[2]), StringTransformationTools.StringToDouble(command[3]), StringTransformationTools.StringToDouble(command[4]), StringTransformationTools.StringToDouble(command[5]))));
+                            Console.WriteLine(TimeTools.Clean(TimeTools.EndTime(StringTools.StringToDouble(command[2]), StringTools.StringToDouble(command[3]), StringTools.StringToDouble(command[4]), StringTools.StringToDouble(command[5]))));
                         }
                         else
                         {
-                            Console.WriteLine(TimeConversionTools.Clean(TimeConversionTools.EndTime(StringTransformationTools.StringToDouble(command[2]), StringTransformationTools.StringToDouble(command[3]), StringTransformationTools.StringToDouble(command[4]))));
+                            Console.WriteLine(TimeTools.Clean(TimeTools.EndTime(StringTools.StringToDouble(command[2]), StringTools.StringToDouble(command[3]), StringTools.StringToDouble(command[4]))));
                         }
                         break;
                     }
@@ -67,7 +67,7 @@ namespace RMS2.timecalcres
                     }
                     else
                     {
-                        Console.WriteLine(TimeConversionTools.DecimalToRegularTime(TimeConversionTools.CalcTimeDifference(TimeConversionTools.RegularToDecimalTime(StringTransformationTools.StringToDouble(command[2])), TimeConversionTools.RegularToDecimalTime(StringTransformationTools.StringToDouble(command[3])))));
+                        Console.WriteLine(TimeTools.DecimalToRegularTime(TimeTools.CalcTimeDifference(TimeTools.RegularToDecimalTime(StringTools.StringToDouble(command[2])), TimeTools.RegularToDecimalTime(StringTools.StringToDouble(command[3])))));
                        
                     }
                     break;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RMS2.timecalcres
 {
-    internal class TimeConversionTools
+    internal class TimeTools
     {
         public static double RegularToDecimalTime(double initialTime)
         {

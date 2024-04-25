@@ -1,15 +1,14 @@
 ﻿using Marcoshell.amatrix;
-using System.Diagnostics;
-using System.Linq.Expressions;
-using System.Text;
-using Windows.ApplicationModel.ConversationalAgent;
-
+using Windows.ApplicationModel.DataTransfer;
 
 namespace RMS2
 {
+    /// <summary>
+    /// Diese Klasse ist der Interpretter dîeser Skript sprache.
+    /// </summary>
     internal class CommandInterpreter
     {
-        public static string interpret(string[] command)
+        public static string interpret(string[] command,bool isExecutedAsScript = false)
         {
             switch (aliasInterpret.commandTranslater(command[0]))
             {
@@ -28,16 +27,28 @@ namespace RMS2
                     }
                 case "exit":
                     {
-                        return "-2 shutdown";
+                        //if (!isExecutedAsScript)
+                        //return "-2 shutdown";
+                        Console.WriteLine("Console will shutdown");
+                        Thread.Sleep(1000);
+                        Log.Message("stop");
+                        Environment.Exit(0);
+                           break;
                     }
                 case "log":
                     {
-                        Log.Message(StringTransformationTools.StringResasembler(command));
+                        if (command.Length > 1)
+                        {
+                            Log.Message(StringTools.StringResasembler(command));
+                            break;
+                        }
+                        else
+                            Error.throwTooLittleArgumentError(command, "message");
                         break;
                     }
                 case "print":
                     {
-                        Console.WriteLine(StringTransformationTools.StringResasembler(command));
+                        Console.WriteLine(StringTools.StringResasembler(command));
                         break;
                     }
                 case "wait":
@@ -69,7 +80,10 @@ namespace RMS2
                         Console.Clear();
                         if (command.Length > 1 && command[1] == "title")
                         {
-                            StartUp.Title();
+                            if (command.Length > 2)
+                                StartUp.Title(StringTools.StringResasembler(command,2));
+                            else
+                                StartUp.Title();
                         }
                         break;
                     }
@@ -93,7 +107,7 @@ namespace RMS2
                             return "-1 failed";
                         }
                         else
-                            ChangeDirectory.SetPath(StringTransformationTools.StringResasembler(command));
+                            Explorer.SetPath(StringTools.StringResasembler(command));
                         break;
 
                     }
@@ -105,7 +119,7 @@ namespace RMS2
                             return "-1 failed";
                         }
                         else
-                            ChangeDirectory.MakeDirectory(StringTransformationTools.StringResasembler(command));
+                            Explorer.MakeDirectory(StringTools.StringResasembler(command));
                         break;
 
                     }
@@ -117,12 +131,15 @@ namespace RMS2
                             return "-1 failed";
                         }
                         else
-                            ChangeDirectory.RemoveDirectory(StringTransformationTools.StringResasembler(command));
+                            Explorer.RemoveDirectory(StringTools.StringResasembler(command));
                         break;
 
                     }
                 case "run":
-                    WindowsCommandLineIntegration.Run(command);
+                    if (!isExecutedAsScript)
+                        WindowsCommandLineIntegration.Run(command);
+                    else
+                        WindowsCommandLineIntegration.Run(command, true);
                     
                     break;
                 case "_":
@@ -136,23 +153,36 @@ namespace RMS2
                     }
                     else
                     {
-                        Matrix101.Matrix(StringTransformationTools.StringToInt(command[1]));
+                        Matrix101.Matrix(StringTools.StringToInt(command[1]));
                     }
                     break;
                 case "color":
-                    if (command.Length < 2)
+                    if (command.Length == 1)
                     {
                         Error.throwTooLittleArgumentError(command, "color (according to C# official Enumeration");
                         break;
                     }
-                    else if (command.Length < 3)
+                    else if (command.Length == 2)
                     {
-                        ColorChange.ChangeConsoleColor(StringTransformationTools.StringToInt(command[1]));
+                        if (command[1] == "help")
+                            Help.GetHelpColor();
+                        else if (command[1] == "theme")
+                            ColorChange.ChangeConsoleColorTheme();
+                      
+                        else
+                            ColorChange.ChangeConsoleColor(StringTools.StringToInt(command[1],15));
                         break;
                     }
                     else
                     {
-                        ColorChange.ChangeConsoleColor(StringTransformationTools.StringToInt(command[1]), StringTransformationTools.StringToInt(command[2]));
+                        if (command[1] == "theme")
+                        {
+                            ColorChange.ChangeConsoleColorTheme(command[2]);
+                        }
+                        else
+                        {
+                            ColorChange.ChangeConsoleColor(StringTools.StringToInt(command[1], 15), StringTools.StringToInt(command[2]));
+                        }
                         break;
                     }
                 case "removefile":
@@ -246,18 +276,44 @@ namespace RMS2
                     }
                 case "sudo":
                     {
-                        if (command.Length == 1)
-                            Sudo.Say();
+                        if (command.Length > 2 && StringTools.StringResasembler(command) == "make me a sandwich")
+                        {
+                            Error.throwCustomError("Proccess.Sudo.Sandwichcreation could not be started driver Sandwichmaker was not installed");
+                        }
                         else
-                            Sudo.Say(StringTransformationTools.StringToInt(command[1]));
+                        {
+                            if (command.Length == 1)
+                                Sudo.Say();
+                            else
+                                Sudo.Say(StringTools.StringToInt(command[1]));
+                        }
                         break;
                     }
-                case "ascii":
+                case "exe":
+                    {
+                        if (command.Length == 1)
+                        {
+                            Error.throwTooLittleArgumentError(command, "file");
+                            return "-1 failed";
+                                }
+                        else
+                            ExecuteScript.Execution(StringTools.StringResasembler(command));
+                        break;
+                    }
+                case "lookup":
                     {
                         if (command.Length > 1)
-                            ASCIIWriter.ASCIIWritingMachine(StringTransformationTools.StringResasembler(command));
-                        else
-                            ASCIIWriter.ASCIIWritingMachine();
+                        {
+                            if (command[1] == "link")
+                                if (command.Length > 2)
+                                {
+                                    WindowsCommandLineIntegration.OpenInExplorer($"https://{StringTools.StringResasembler(command, 2)}");
+                                    break;
+                                }
+                            WindowsCommandLineIntegration.OpenInExplorer($"https://duckduckgo.com/{StringTools.StringResasembler(command)}");
+                            break;
+                        }
+                        Error.throwTooLittleArgumentError(command, "query");
                         break;
                     }
                 default:
@@ -267,25 +323,33 @@ namespace RMS2
             }
             return "0 success";
         }
-        public static string[] RepeaterChecker(string[] command)
+        public static string[] RepeaterChecker(string[] command, bool isExecutedInAScript = false)
         {
             bool repeaterMark = false;
             for (int i = 0; i < command.Length; i++)
             {
                 if (command[i] == "!!")
                 {
-                    repeaterMark = true;
-                    string oldPath = Directory.GetCurrentDirectory();
-                    Directory.SetCurrentDirectory(Program.initialPath);
-                    string[] commandList = File.ReadAllLines("commands.rmsl");
-                    Directory.SetCurrentDirectory(oldPath);
-                    command[i] = commandList[commandList.Length - 2];
+                    if (isExecutedInAScript)
+                    {
+                        Error.throwSkriptExecutionForbiden("!! interpreter");
+                        command[i] = "";
+                    }
+                    else
+                    {
+                        repeaterMark = true;
+                        string oldPath = Directory.GetCurrentDirectory();
+                        Directory.SetCurrentDirectory(Program.initialPath);
+                        string[] commandList = File.ReadAllLines("commands.rmsl");
+                        Directory.SetCurrentDirectory(oldPath);
+                        command[i] = commandList[commandList.Length - 2];
+                    }
                     
                 }
             }
             if (repeaterMark)
             {
-                string reasembled = StringTransformationTools.StringResasembler(command, 0);
+                string reasembled = StringTools.StringResasembler(command, 0);
 
                 string[] output = reasembled.Split(' ');
                 Console.WriteLine(reasembled);

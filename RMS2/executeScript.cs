@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Versioning;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace RMS2
-{
+{/// <summary>
+ /// Diese Klasse lässt ein Skript, welches du selber schreiben kannst erstellen.
+ /// </summary>
     internal class ExecuteScript
     {
         public static void Execution(string file)
@@ -16,14 +19,10 @@ namespace RMS2
                 foreach (var command in commands)
                 {
                     string[] dividedCommand = command.ToLower().Split(' ');
-                    string response = CommandInterpreter.interpret(CommandInterpreter.RepeaterChecker(dividedCommand));
+                    string response = CommandInterpreter.interpret(CommandInterpreter.RepeaterChecker(dividedCommand,true));
                     if (response == "-1 failed")
                     {
                         Error.throwCommandError(command);
-                    }
-                    else if (response == "-2 shutdown")
-                    {
-                        Error.throwCustomError("For your safety, you can't shutdown the console, during a script");
                     }
                 }
             }
