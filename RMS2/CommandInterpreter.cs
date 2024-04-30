@@ -57,7 +57,10 @@ namespace RMS2
                         break;
                     }
                 case "time":
-                    timecalcres.Time.timeInterpreter(command);
+                   string response =  timecalcres.Time.timeInterpreter(command);
+                    if (response == "-1 failed")
+                        return response;
+                    Console.WriteLine($"{response}");
                     break;
                 case "list":
                     {
@@ -166,11 +169,9 @@ namespace RMS2
                     {
                         if (command[1] == "help")
                             Help.GetHelpColor();
-                        else if (command[1] == "theme")
-                            ColorChange.ChangeConsoleColorTheme();
-                      
+
                         else
-                            ColorChange.ChangeConsoleColor(StringTools.StringToInt(command[1],15));
+                            ColorChange.ChangeConsoleColor(StringTools.StringToInt(command[1], 15));
                         break;
                     }
                     else

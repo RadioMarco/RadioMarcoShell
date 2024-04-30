@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RadioMarco")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8594997d21f038e66f2a8d589df3089dd8064ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ede0646255e5b4001e22b22836df02d646e0216")]
 [assembly: System.Reflection.AssemblyProductAttribute("RMS2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RMS2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

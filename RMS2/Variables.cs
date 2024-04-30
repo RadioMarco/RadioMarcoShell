@@ -94,7 +94,8 @@ namespace RMS2
         }
         public static void DeleteAVariable(string variableName)
         {
-            File.Delete($"{Environment.GetEnvironmentVariable("RMS2logs")}\\var\\{variableName}.rmsvar");
+            string path = Environment.GetEnvironmentVariable("RMS2logs");
+            File.Delete($"{path}\\var\\{variableName}.rmsvar");
         }
     }
 }
