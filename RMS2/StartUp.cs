@@ -18,11 +18,12 @@ namespace RMS2
     {
         public static void Title(string title = "#Radio Marco")
         {
+            Console.Clear();
             ASCIIWriter.ASCIIWritingMachine(title);
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine($"Radio Marco Shell  version 2.0 //OS-Kernel: {Environment.OSVersion} // User: {Environment.UserName}@{Environment.UserDomainName} // Hostname: {Environment.MachineName}");
-            Network.getLocalIPAddressWithNetworkInterface(NetworkInterfaceType.Wireless80211);
+            Console.WriteLine(Network.getLocalIPAddressWithNetworkInterface(NetworkInterfaceType.Wireless80211));
 
             Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine(Splash.ShowSplash());

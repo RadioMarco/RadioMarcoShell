@@ -4,7 +4,7 @@ using Windows.ApplicationModel.DataTransfer;
 namespace RMS2
 {
     /// <summary>
-    /// Diese Klasse ist der Interpretter dîeser Skript sprache.
+    /// Diese Klasse ist der Interpretter dieser Skript sprache.
     /// </summary>
     internal class CommandInterpreter
     {
@@ -61,7 +61,7 @@ namespace RMS2
                     if (response == "-1 failed")
                         return response;
                     Console.WriteLine($"{response}");
-                    break;
+                    break;  //varwrite
                 case "list":
                     {
                         Explorer.ListAll(Directory.GetCurrentDirectory());
@@ -77,7 +77,7 @@ namespace RMS2
                         }
                         Console.WriteLine(Converter.ConverterInterpreter(command[1], command[2], command[3]));
                         break;
-                    }
+                    } //varwrite
                 case "clear":
                     {
                         Console.Clear();
@@ -89,7 +89,7 @@ namespace RMS2
                                 StartUp.Title();
                         }
                         break;
-                    }
+                    } 
                 case "read":
                     {
                         if (command.Length < 2)
@@ -101,7 +101,7 @@ namespace RMS2
                             ReadFile.read(command[1]);
                         break;
 
-                    }
+                    } 
                 case "changedirectory":
                     {
                         if (command.Length < 2)
@@ -265,8 +265,7 @@ namespace RMS2
                         Console.WriteLine("I don't have a GF, I'm still a virgin :(");
                         break;
                     }
-                case "fu":
-                    {
+                case "fu":{
                         Console.WriteLine("Don't be rude. I'm just doing my Job, if something doesn't work, it's entierly your fault!");
                             break;
                     }
@@ -317,6 +316,9 @@ namespace RMS2
                         Error.throwTooLittleArgumentError(command, "query");
                         break;
                     }
+                case "var":
+                    Variables.VarCommandInterpret(command);
+                    break;
                 default:
                     return "-1 failed";
                 

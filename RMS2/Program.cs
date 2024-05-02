@@ -41,11 +41,6 @@ namespace RMS2
 
                 }
             } while (status != "-2 shutdown");
-
-
-
-
-
         }
         /// <summary>
         /// Initizializes the Environment Variables RMS2 needs.

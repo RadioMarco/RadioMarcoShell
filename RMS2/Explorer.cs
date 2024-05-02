@@ -28,16 +28,22 @@ namespace RMS2
                 Error.throwArgumentError("changedirectory", path);
             }
         }
-        public static void MakeDirectory(string name)
+        public static void MakeDirectory(string name, bool init = false)
         {
             try
             {
-                name = Variables.GetDefaultVariables(name);
+                if (!init)
+                {
+                    name = Variables.GetDefaultVariables(name);
+                }
                 Directory.CreateDirectory(name);
             }
             catch(DirectoryNotFoundException)
             {
-                Error.throwCustomError("Something went wrong, this name is probably illegal or something.");
+                if (init)
+                    Error.throwCustomError("Something went wrong, this name is probably illegal or something.",true);
+                else
+                    Error.throwCustomError("Something went wrong, this name is probably illegal or something.");
             }
             catch (UnauthorizedAccessException)
             {

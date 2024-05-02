@@ -11,7 +11,7 @@ namespace RMS2
 {
     internal class Network
     {
-        public static void getLocalIPAddressWithNetworkInterface(NetworkInterfaceType _type)
+        public static string getLocalIPAddressWithNetworkInterface(NetworkInterfaceType _type)
         {
             string localIP = "";
             
@@ -33,12 +33,12 @@ namespace RMS2
             }
             if (localIP != "")
             {
-                Console.WriteLine($"Local IP Address = {localIP}");
+                return $"Local IP Address = {localIP}";
             }
             else
             {
                 Log.Message("Not able to find your Localadress. You're probably disconected from the LAN");
-                Console.WriteLine("Not connected");
+                return "Not connected";
             }
         }
     }

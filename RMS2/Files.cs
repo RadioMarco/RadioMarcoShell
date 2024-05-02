@@ -8,10 +8,11 @@ namespace RMS2
 {
     internal class Files
     {
-        public static void WriteInFile(string[] text)
+        public static void WriteInFile(string[] text,bool forVar = false)
         {
             try
             {
+                if (forVar) { text[1] += ".rmsvar"; }
                 using StreamWriter sw = File.AppendText(text[1]);
                 {
                     for (int i = 2;i < text.Length;i++)

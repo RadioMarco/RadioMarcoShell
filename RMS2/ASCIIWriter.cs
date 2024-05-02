@@ -9,7 +9,7 @@ namespace RMS2
     {
         public static void ASCIIWritingMachine(string Word,int width = 0, int height = 0)
         {
-            Console.Clear();
+            
             char[] chars = Word.ToUpper().ToCharArray();
             foreach (var item in chars)
             {

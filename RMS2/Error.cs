@@ -48,18 +48,24 @@ namespace RMS2
             Console.ForegroundColor = Program.foregroundColor;
             Console.BackgroundColor = Program.backgroundColor;
         }
-        public static void throwUnautohrizedAccess(string path)
+        public static void throwUnautohrizedAccess(string path,bool init = false)
         {
-            Log.Message($"Unauthorized Access at {path} ");
+            if (!init)
+            {
+                Log.Message($"Unauthorized Access at {path} ");
+            }
             Console.ForegroundColor = ConsoleColor.Red;
             Console.BackgroundColor = ConsoleColor.Black;
             Console.WriteLine($"We can't access this File, we don't have the permission to do that.");
             Console.ForegroundColor = Program.foregroundColor;
             Console.BackgroundColor = Program.backgroundColor;
         }
-        public static void throwCustomError(string message)
+        public static void throwCustomError(string message, bool init = false)
         {
-            Log.Message(message);
+            if (!init)
+            {
+                Log.Message(message);
+            }
             Console.ForegroundColor = ConsoleColor.Red;
             Console.BackgroundColor = ConsoleColor.Black;
             Console.WriteLine(message);
