@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RMS2
+﻿namespace RMS2
 {
     /// <summary>
     /// Werkzeuge, zum bearbeiten und Einsehen von Ordnern 
@@ -23,10 +16,11 @@ namespace RMS2
             {
                 Error.throwUnautohrizedAccess(path);
             }
-            catch (DirectoryNotFoundException)
+            catch (System.IO.IOException)
             {
                 Error.throwArgumentError("changedirectory", path);
             }
+
         }
         public static void MakeDirectory(string name, bool init = false)
         {

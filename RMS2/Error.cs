@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RMS2
+﻿namespace RMS2
 {
     /// <summary>
     /// Diese Klasse dient dazu, bei Fehlern die Nachrichten zu handeln.

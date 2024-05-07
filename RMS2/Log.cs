@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata;
-
-namespace RMS2
+﻿namespace RMS2
 {/// <summary>
 /// Die <c>Log</c> Klasse ist hier, um einen String in die Logdatei zu Speicheren. Dies kann verschiedene Vorteile mit sich bringen
 /// so kann man alle Fehler mit mehr Informationen und Datum und Uhrzeit in Sekunden durchlesen. Nicht im Log enthalten sind die erfolgreich ausgeführten Befehlen,
@@ -15,7 +13,11 @@ namespace RMS2
         /// <param name="message">Text welcher im Log angezeigt werden soll</param>
         public static void Message(string message)
         {
-            using StreamWriter swMessage = File.AppendText($"{Environment.GetEnvironmentVariable("RMS2logs")}\\log.rmsl");
+            string path = Environment.GetEnvironmentVariable("RMS2logs");
+            string curdir = Directory.GetCurrentDirectory();
+            Directory.SetCurrentDirectory(path);
+            path += "\\log.rmsl";
+            using StreamWriter swMessage = File.AppendText(path);
             if (message == "start")
             {
                 
@@ -33,12 +35,18 @@ namespace RMS2
                 swMessage.WriteLine($"[{DateTime.UtcNow} UTC]: {message}");
             }
             swMessage.Dispose();
+            Directory.SetCurrentDirectory(curdir);
         }
         public static void Command(string command)
         {
+            string path = Environment.GetEnvironmentVariable("RMS2logs");
+            string curdir = Directory.GetCurrentDirectory();
+            Directory.SetCurrentDirectory(path);
+            path += "\\commands.rmsl";
             using StreamWriter swCommand = File.AppendText($"{Environment.GetEnvironmentVariable("RMS2logs")}\\commands.rmsl");
             swCommand.WriteLine(command);
             swCommand.Dispose();
+            Directory.SetCurrentDirectory(curdir);
 
         }
     }

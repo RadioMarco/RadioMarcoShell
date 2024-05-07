@@ -1,6 +1,4 @@
 ﻿using Marcoshell.amatrix;
-using Windows.ApplicationModel.DataTransfer;
-
 namespace RMS2
 {
     /// <summary>
@@ -342,7 +340,8 @@ namespace RMS2
                     {
                         repeaterMark = true;
                         string oldPath = Directory.GetCurrentDirectory();
-                        Directory.SetCurrentDirectory(Program.initialPath);
+                        string path = Environment.GetEnvironmentVariable("RMS2logs");
+                        Directory.SetCurrentDirectory(path);
                         string[] commandList = File.ReadAllLines("commands.rmsl");
                         Directory.SetCurrentDirectory(oldPath);
                         command[i] = commandList[commandList.Length - 2];

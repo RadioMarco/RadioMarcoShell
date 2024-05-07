@@ -1,7 +1,4 @@
-﻿using System.Drawing;
-using Windows.System.UserProfile;
-
-namespace RMS2
+﻿namespace RMS2
 {
     /// <summary>
     /// Haupt Klasse. Diese Klasse Leitet das Programm 

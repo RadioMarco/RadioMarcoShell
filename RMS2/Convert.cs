@@ -1,5 +1,4 @@
-﻿
-namespace RMS2
+﻿namespace RMS2
 {
     internal class Converter
     {

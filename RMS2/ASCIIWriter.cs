@@ -1,6 +1,4 @@
-﻿using Windows.UI.Input.Inking;
-
-namespace RMS2
+﻿namespace RMS2
 {
     /// <summary>
     /// Dies ist der Interpretter und Generierer für die Buchstaben, die man zu oberst in der Konsole anzeigen kann

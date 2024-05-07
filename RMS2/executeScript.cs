@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Versioning;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RMS2
+﻿namespace RMS2
 {/// <summary>
  /// Diese Klasse lässt ein Skript, welches du selber schreiben kannst erstellen.
  /// </summary>
