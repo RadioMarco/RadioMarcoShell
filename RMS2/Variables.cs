@@ -44,7 +44,7 @@ namespace RMS2
                 case "&RMS2":
                     variableName = "Radio Marco Shell 2"; break;
                 default:
-                    GetOwnVariables(variableName);
+                  variableName =  GetOwnVariables(variableName);
                     break;
             }
             return variableName;
@@ -67,15 +67,18 @@ namespace RMS2
             try
             {
                 string dir = Environment.GetEnvironmentVariable("RMS2logs");
-                dir += $"/var/{variableName}.rmsvar";
-                string[] variableHistory = File.ReadAllLines($"dir"); Thread.Sleep(1000);
-                variableName = variableHistory[variableHistory.Length - 1];
+                if (dir != null)
+                {
+                    dir += $"\\var\\{variableName}.rmsvar";
+                    string[] variableHistory = File.ReadAllLines(dir); Thread.Sleep(1000);
+                    variableName = variableHistory[variableHistory.Length - 1];
+                }
             }
-            catch (FileNotFoundException)
-            {
-                //litteraly does nothing, because it doesn't matter
-
+            catch (System.IO.IOException)
+            { 
+                // Literally does nothing, it's just there, to avoid crashes.
             }
+            
 
             return variableName;
         }
@@ -135,7 +138,8 @@ namespace RMS2
                             string[] content = File.ReadAllLines(variable);
                             string[] varPath = variable.Split('/');
                             string[] varEnding = varPath[varPath.Length - 1].Split('.');
-                            Console.WriteLine($"{varEnding[0]} = {content[content.Length - 1]}");
+                            string[] varName = varEnding[varEnding.Length - 2].Split('\\');
+                            Console.WriteLine($"{varName[varName.Length-1]} = {content[content.Length - 1]}");
                         }
 
                     }

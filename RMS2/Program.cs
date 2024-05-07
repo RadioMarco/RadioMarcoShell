@@ -16,15 +16,12 @@
         {
             initializeEV();
             Console.ForegroundColor = foregroundColor; //Schriftfarbe der Console
-            
             StartUp.Title();
-
             string? status;
             Log.Message("start");
             do
             {
                 Console.Title = "RMS2";
-
                 Console.Write($"{Environment.UserName}@{Environment.CurrentDirectory}> ");
                 status = Console.ReadLine();
                 Log.Command(status);
@@ -35,7 +32,6 @@
                 if (status == "-1 failed")
                 {
                     Error.throwCommandError(command[0]);
-
                 }
             } while (status != "-2 shutdown");
         }
@@ -49,28 +45,15 @@
             {
                 Environment.SetEnvironmentVariable("RMS2",Environment.ProcessPath);
             }
-            
             string logPath = Environment.GetEnvironmentVariable("RMS2logs");
             if (logPath == null)
             {
                 logPath = Environment.GetEnvironmentVariable("Appdata");
                 logPath += "\\.RMS2";
                 Explorer.MakeDirectory(logPath);    
-                Console.WriteLine(logPath); 
-               
+                Console.WriteLine(logPath);   
                 Environment.SetEnvironmentVariable("RMS2logs", logPath);
             }
-
         }
-
-
     }
-
-
-
-
-
-
-
-
 }

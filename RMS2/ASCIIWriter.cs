@@ -966,24 +966,24 @@
         public static int SignApostroph(int widthOtherLetters, int height = 0)
         {
             Console.SetCursorPosition(widthOtherLetters, height + 0);
-            Console.WriteLine("||||");
+            Console.WriteLine("   ||||");
             Console.SetCursorPosition(widthOtherLetters, height + 1);
-            Console.WriteLine("||||");
+            Console.WriteLine("   ||||");
             Console.SetCursorPosition(widthOtherLetters, height + 2);
-            Console.WriteLine("||||");
+            Console.WriteLine("   ||||");
 
-            return 4;
+            return 7;
         }
         public static int SignKomma(int widthOtherLetters, int height = 0)
         {
             Console.SetCursorPosition(widthOtherLetters, height + 5);
-            Console.WriteLine("||||");
+            Console.WriteLine("   ||||");
             Console.SetCursorPosition(widthOtherLetters, height + 6);
-            Console.WriteLine("||||");
+            Console.WriteLine("   ||||");
             Console.SetCursorPosition(widthOtherLetters, height + 7);
-            Console.WriteLine("////");
+            Console.WriteLine("   ////");
 
-            return 4;
+            return 7;
 
 
 
@@ -991,11 +991,11 @@
         public static int SignColumn(int widthOtherLetters, int height = 0)
         {
             Console.SetCursorPosition(widthOtherLetters, height + 5);
-            Console.WriteLine("....");
+            Console.WriteLine("   ....");
             Console.SetCursorPosition(widthOtherLetters, height + 6);
-            Console.WriteLine("....");
+            Console.WriteLine("   ....");
 
-            return 4;
+            return 7;
 
 
 
@@ -1003,15 +1003,15 @@
         public static int SignDoubleColumn(int widthOtherLetters, int height = 0)
         {
             Console.SetCursorPosition(widthOtherLetters, height + 1);
-            Console.WriteLine("....");
+            Console.WriteLine("   ....");
             Console.SetCursorPosition(widthOtherLetters, height + 2);
-            Console.WriteLine("....");
+            Console.WriteLine("   ....");
             Console.SetCursorPosition(widthOtherLetters, height + 5);
-            Console.WriteLine("....");
+            Console.WriteLine("   ....");
             Console.SetCursorPosition(widthOtherLetters, height + 6);
-            Console.WriteLine("....");
+            Console.WriteLine("   ....");
 
-            return 4;
+            return 7;
 
 
 
@@ -1019,20 +1019,20 @@
         public static int SignSemiColumn(int widthOtherLetters, int height = 0)
         {
             Console.SetCursorPosition(widthOtherLetters, height + 1);
-            Console.WriteLine("....");
+            Console.WriteLine("   ....");
             Console.SetCursorPosition(widthOtherLetters, height + 2);
-            Console.WriteLine("....");
+            Console.WriteLine("   ....");
             //3
             //4
             Console.SetCursorPosition(widthOtherLetters, height + 5);
-            Console.WriteLine("||||");
+            Console.WriteLine("   ||||");
             Console.SetCursorPosition(widthOtherLetters, height + 6);
-            Console.WriteLine("||||");
+            Console.WriteLine("   ||||");
             Console.SetCursorPosition(widthOtherLetters, height + 7);
-            Console.WriteLine("////");
+            Console.WriteLine("   ////");
 
 
-            return 4;
+            return 7;
         }
         public static int SignOpenCornerBracket(int widthOtherLetters, int height = 0)
         {
