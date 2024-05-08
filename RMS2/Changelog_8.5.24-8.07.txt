@@ -1,2 +1,0 @@
-added removefile function properly 
-before it was an empty case that did the same as "movefile", because forgot to implement the code. 

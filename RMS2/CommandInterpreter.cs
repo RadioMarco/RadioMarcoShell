@@ -283,7 +283,7 @@ namespace RMS2
                         Console.WriteLine("Problems can happen, don't worry.");
                             break;
                     }
-                case "sudo":
+                case "sudon't":
                     {
                         if (command.Length > 2 && StringTools.StringResasembler(command) == "make me a sandwich")
                         {
@@ -292,9 +292,9 @@ namespace RMS2
                         else
                         {
                             if (command.Length == 1)
-                                Sudo.Say();
+                                Sudont.Say();
                             else
-                                Sudo.Say(StringTools.StringToInt(command[1]));
+                                Sudont.Say(StringTools.StringToInt(command[1]));
                         }
                         break;
                     }
@@ -328,6 +328,10 @@ namespace RMS2
                 case "var":
                     Variables.VarCommandInterpret(command);
                     break;
+                case "sudo":
+                    {
+                        break;
+                    }
                 default:
                     return "-1 failed";
                 
