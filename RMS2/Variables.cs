@@ -162,6 +162,7 @@ namespace RMS2
                     Directory.SetCurrentDirectory(Environment.GetEnvironmentVariable("RMS2logs"));
                     Explorer.MakeDirectory("var");
                     Directory.SetCurrentDirectory(path);
+                    // add funktions where you can store a value in Variables
                     Files.WriteInFile(command, true);
                     Directory.SetCurrentDirectory(directory);
                 }

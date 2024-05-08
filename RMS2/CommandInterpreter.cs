@@ -185,6 +185,17 @@ namespace RMS2
                         break;
                     }
                 case "removefile":
+                    {
+                        if (command.Length < 2)
+                        {
+                            Error.throwTooLittleArgumentError(command, "File/Destination");
+                        }
+                        else 
+                        {
+                            Files.RemoveFile(command[1]);
+                        }
+                        break;
+                    }
                 case "movefile":
                     if (command.Length < 3)
                     {
