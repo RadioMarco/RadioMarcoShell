@@ -3,27 +3,28 @@ using Windows.ApplicationModel.Appointments.AppointmentsProvider;
 namespace RMS2
 {
     /// <summary>
-    /// Diese Klasse ist der Interpretter dieser Skript sprache.
+    /// This is the interpreter of the command line/language.
     /// </summary>
     internal class CommandInterpreter
     {
         public static string interpret(string[] command,bool isExecutedAsScript = false)
         {
-            switch (aliasInterpret.commandTranslater(command[0]))
+            switch (command[0])
             {
+                //comments indicators
                 case "":
-                    {
-                        break;
-                    }
                 case "#":
                     {
                         break;
                     }
+                //help command, shows a list of commands
+                case "hp":
                 case "help":
                     {
                         Help.GetHelp();
                         break;
                     }
+                //quits the programm
                 case "exit":
                     {
                         //if (!isExecutedAsScript)
@@ -34,6 +35,7 @@ namespace RMS2
                         Environment.Exit(0);
                            break;
                     }
+                //writes someting in a log
                 case "log":
                     {
                         if (command.Length > 1)
@@ -45,27 +47,35 @@ namespace RMS2
                             Error.throwTooLittleArgumentError(command, "message");
                         break;
                     }
+                //Prints a String into the CLI
+                case "echo":
                 case "print":
                     {
                         Console.WriteLine(StringTools.StringResasembler(command));
                         break;
                     }
+                //makes the programm wait for a set of Seconds
                 case "wait":
                     {
                         Wait.waitInterpret(command);
                         break;
                     }
+                //has different functions around the topic of time
                 case "time":
                    string response =  timecalcres.Time.timeInterpreter(command);
                     if (response == "-1 failed")
                         return response;
                     Console.WriteLine($"{response}");
                     break;  //varwrite
+                //shows the files in the directory
+                case "ls":
+                case "la":
                 case "list":
                     {
                         Explorer.ListAll(Directory.GetCurrentDirectory());
                         break;
                     }
+                //converts one Unit into an other
                 case "convert":
                     {
                         if (command.Length < 4)
@@ -77,6 +87,8 @@ namespace RMS2
                         Console.WriteLine(Converter.ConverterInterpreter(command[1], command[2], command[3]));
                         break;
                     } //varwrite
+                //clears the cli, with title <string(default: #Radio Marco)> sets a custom Text
+                case "cl":
                 case "clear":
                     {
                         Console.Clear();
@@ -88,7 +100,9 @@ namespace RMS2
                                 StartUp.Title();
                         }
                         break;
-                    } 
+                    }
+                // reads a file
+                case "cat":
                 case "read":
                     {
                         if (command.Length < 2)
@@ -100,7 +114,9 @@ namespace RMS2
                             ReadFile.read(command[1]);
                         break;
 
-                    } 
+                    }
+                //changes the current working directory
+                case "cd":
                 case "changedirectory":
                     {
                         if (command.Length < 2)
@@ -113,6 +129,8 @@ namespace RMS2
                         break;
 
                     }
+                // makes a new directory
+                case "mkdir":
                 case "makedirectory":
                     {
                         if (command.Length < 2)
@@ -125,9 +143,13 @@ namespace RMS2
                         break;
 
                     }
-                case "remove":
-                case "removefile":
+                //removes a file or an Directory (with -r with files) used to be two commands
+                case "rmdir":
+                case "del":
+                case "rm":
                 case "removedirectory":
+                case "removefile":
+                case "remove":
 
                     {
                         if (command.Length < 2)
@@ -156,6 +178,7 @@ namespace RMS2
                         break;
 
                     }
+                //executes a command in cmd.exe
                 case "run":
                     if (!isExecutedAsScript)
                         WindowsCommandLineIntegration.Run(command);
@@ -163,20 +186,9 @@ namespace RMS2
                         WindowsCommandLineIntegration.Run(command, true);
                     
                     break;
-                case "_":
-                    if (command.Length > 1 && command[1] == "<")
-                        StartUp.Commandli();
-                    break;
-                case "amatrix":
-                    if (command.Length < 2)
-                    {
-                        Matrix101.Matrix();
-                    }
-                    else
-                    {
-                        Matrix101.Matrix(StringTools.StringToInt(command[1]));
-                    }
-                    break;
+                //changes the color of the Back- or Foreground of the cli
+                case "colour":
+                case "clr":
                 case "color":
                     if (command.Length == 1)
                     {
@@ -204,6 +216,8 @@ namespace RMS2
                         }
                         break;
                     }
+                // moves files from one dir. to an other.
+                case "mv":
                 case "movefile":
                     if (command.Length < 3)
                     {
@@ -217,7 +231,9 @@ namespace RMS2
                     {
                         Files.MoveFile(command[1], command[2]);
                     }
-                    break;      
+                    break;
+                // Opens a file in explorer.exe
+                case "./":
                 case "open":
                     if (command.Length == 1 || command[1] == "here")
                     {
@@ -228,6 +244,8 @@ namespace RMS2
                         WindowsCommandLineIntegration.OpenInExplorer(command[1]);
                     }
                     break;
+                // You can write at the end of a file. doesn't currently support editing pre existing text.
+                case "nano":
                 case "write":
                     {
                         if (command.Length < 2)
@@ -240,38 +258,54 @@ namespace RMS2
                         }
                         break;
                     }
+                //executes something in powershell.exe
+                case "ps:":
                 case "ps":
                     {
                         WindowsCommandLineIntegration.RunInPowerShell(command);
                         break;
                     }
+                //plays a sound
                 case "tune":
+                // let's you interact with custom variales.
+                case "var":
+                    Variables.VarCommandInterpret(command);
+                    break;
+                //let's you execute your own scripts
+                case "exe":
                     {
-                        if (command.Length == 2)
+                        if (command.Length == 1)
                         {
-                            if (command[1] == "help")
-                            {
-                                Help.GetHelpTune();
-                            }
-                            else
-                            {
-                                Tune.Play();
-                            }
-                        }
-                        else if (command.Length == 3)
-                        {
-                            Tune.Play(command[1]);
-                        }
-                        else if (command.Length == 4)
-                        {
-                            Tune.Play(command[1], command[2]);
+                            Error.throwTooLittleArgumentError(command, "file");
+                            return "-1 failed";
                         }
                         else
-                        {
-                            Tune.Play(command[1], command[2], command[3]);
-                        }
+                            ExecuteScript.Execution(StringTools.StringResasembler(command));
                         break;
                     }
+                // lookup something in the internet
+                case "lookup":
+                    {
+                        if (command.Length > 1)
+                        {
+                            if (command[1] == "link")
+                                if (command.Length > 2)
+                                {
+                                    WindowsCommandLineIntegration.OpenInExplorer($"https://{StringTools.StringResasembler(command, 2)}");
+                                    break;
+                                }
+                            WindowsCommandLineIntegration.OpenInExplorer($"https://duckduckgo.com/{StringTools.StringResasembler(command)}");
+                            break;
+                        }
+                        Error.throwTooLittleArgumentError(command, "query");
+                        break;
+                    }
+                //does currently nothing planned to grant you admin priviledges.
+                case "sudo":
+                    {
+                        break;
+                    }
+                //easteregg commands
                 case "thanks":
                     {
                         Console.WriteLine("No Problem :3");
@@ -306,40 +340,21 @@ namespace RMS2
                         }
                         break;
                     }
-                case "exe":
-                    {
-                        if (command.Length == 1)
-                        {
-                            Error.throwTooLittleArgumentError(command, "file");
-                            return "-1 failed";
-                                }
-                        else
-                            ExecuteScript.Execution(StringTools.StringResasembler(command));
-                        break;
-                    }
-                case "lookup":
-                    {
-                        if (command.Length > 1)
-                        {
-                            if (command[1] == "link")
-                                if (command.Length > 2)
-                                {
-                                    WindowsCommandLineIntegration.OpenInExplorer($"https://{StringTools.StringResasembler(command, 2)}");
-                                    break;
-                                }
-                            WindowsCommandLineIntegration.OpenInExplorer($"https://duckduckgo.com/{StringTools.StringResasembler(command)}");
-                            break;
-                        }
-                        Error.throwTooLittleArgumentError(command, "query");
-                        break;
-                    }
-                case "var":
-                    Variables.VarCommandInterpret(command);
+                case "_":
+                    if (command.Length > 1 && command[1] == "<")
+                        StartUp.Commandli();
                     break;
-                case "sudo":
+                case "amatrix":
+                    if (command.Length < 2)
                     {
-                        break;
+                        Matrix101.Matrix();
                     }
+                    else
+                    {
+                        Matrix101.Matrix(StringTools.StringToInt(command[1]));
+                    }
+                    break;
+                
                 default:
                     return "-1 failed";
                 

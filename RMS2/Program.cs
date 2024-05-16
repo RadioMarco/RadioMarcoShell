@@ -1,7 +1,7 @@
 ﻿namespace RMS2
 {
     /// <summary>
-    /// Haupt Klasse. Diese Klasse Leitet das Programm 
+    /// Main class 
     /// </summary>
     internal class Program
     {
@@ -10,12 +10,12 @@
         public static ConsoleColor foregroundColor = ConsoleColor.White;
         public static ConsoleColor backgroundColor = ConsoleColor.Black;
         /// <summary>
-        /// Die Main Methode. Sie ist das Wichtigste des ganzen Programms
+        /// Main methode is the heart of this language
         /// </summary>
         static void Main()
         {
             initializeEV();
-            Console.ForegroundColor = foregroundColor; //Schriftfarbe der Console
+            Console.ForegroundColor = foregroundColor; //Fontcolor of the Console
             StartUp.Title();
             string? status;
             Log.Message("start");
