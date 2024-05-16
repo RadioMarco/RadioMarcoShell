@@ -44,20 +44,31 @@
                 Error.throwUnautohrizedAccess(name);
             }
         }
-        public static void RemoveDirectory(string name)
+        public static void RemoveDirectoryOrFile(string name,bool recursive = false,bool hideInfos = false)
         {
             try
             {
                 name = Variables.GetDefaultVariables(name);
-                Directory.Delete(name);
+                if (Directory.Exists(name))
+                {
+                    Directory.Delete(name, recursive);
+
+                }
+                else if (File.Exists(name))
+                {
+                    Files.RemoveFile(name);
+                }
+                else 
+                {
+                    if (!hideInfos)
+                        Error.throwCustomError($"{name} does not exist.");  
+                }
             }
-            catch (DirectoryNotFoundException)
-            {
-                Error.throwArgumentError("removedirectory", name);
-            }
+            
             catch (System.IO.IOException)
             {
-                Error.throwCustomError("Windows refuses to delete Directories with Content in it. You might want to delete the contents of the Directory first.");
+                if (!hideInfos)
+                    Error.throwCustomError($"Couldn't delete this directory because it has content in it. try rm -r {name}");
             }
         }
         public static void ListAll(string directory)

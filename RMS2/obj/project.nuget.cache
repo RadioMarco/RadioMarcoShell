@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "u0wOwsehsIETaEX/ZCMXn3OVIpaFPOpO2k67Nvgt0wC4sKBtHhc7rpj/6czQZEFM2ky7ym2D8f/OR3aBj3JdpQ==",
+  "dgSpecHash": "WtuOEGUkcXR/YD7EtSpnw+sjqcytXJxwMEP47Ww1yiq3nCwES2iIlC3j1+6fUl+uCEZO5Pjua+R9R1R34OVh5w==",
   "success": true,
   "projectFilePath": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\RMS2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mrezzoli\\.nuget\\packages\\system.security.permissions\\8.0.0\\system.security.permissions.8.0.0.nupkg.sha512",
-    "C:\\Users\\mrezzoli\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512",
     "C:\\Users\\mrezzoli\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22621.31\\microsoft.windows.sdk.net.ref.10.0.22621.31.nupkg.sha512"
   ],
   "logs": []

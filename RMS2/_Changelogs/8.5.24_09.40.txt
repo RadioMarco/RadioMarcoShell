@@ -1,0 +1,3 @@
+Reworked removefile and removedirectory: 
+they're now merged as remove 
+the legacy commands removefile and removedriectory (and their alias) still work, but do the same thing. (found out  

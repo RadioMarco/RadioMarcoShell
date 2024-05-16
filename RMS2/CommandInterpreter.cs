@@ -1,4 +1,5 @@
 ﻿using Marcoshell.amatrix;
+using Windows.ApplicationModel.Appointments.AppointmentsProvider;
 namespace RMS2
 {
     /// <summary>
@@ -124,15 +125,34 @@ namespace RMS2
                         break;
 
                     }
+                case "remove":
+                case "removefile":
                 case "removedirectory":
+
                     {
                         if (command.Length < 2)
                         {
                             Error.throwTooLittleArgumentError(command, "path");
                             return "-1 failed";
                         }
+                        if (command.Length < 3)
+                            Explorer.RemoveDirectoryOrFile(StringTools.StringResasembler(command));
                         else
-                            Explorer.RemoveDirectory(StringTools.StringResasembler(command));
+                        {
+                            if (command[1] == "-r") //deletes all childfolders and files
+                            {
+                                Explorer.RemoveDirectoryOrFile(StringTools.StringResasembler(command, 2), true);
+                            }
+                            else if (command[1] == "-f") //hides error Messages
+                                Explorer.RemoveDirectoryOrFile(StringTools.StringResasembler(command, 2),false, true);
+                            else if (command[1] == "-rf") //deletes all childfolders and files and also hides messages
+                                Explorer.RemoveDirectoryOrFile(StringTools.StringResasembler(command, 2), true, true);
+
+                            else
+                            {
+                                Explorer.RemoveDirectoryOrFile(StringTools.StringResasembler(command));
+                            }
+                        }
                         break;
 
                     }
@@ -181,18 +201,6 @@ namespace RMS2
                         else
                         {
                             ColorChange.ChangeConsoleColor(StringTools.StringToInt(command[1], 15), StringTools.StringToInt(command[2]));
-                        }
-                        break;
-                    }
-                case "removefile":
-                    {
-                        if (command.Length < 2)
-                        {
-                            Error.throwTooLittleArgumentError(command, "File/Destination");
-                        }
-                        else 
-                        {
-                            Files.RemoveFile(command[1]);
                         }
                         break;
                     }
