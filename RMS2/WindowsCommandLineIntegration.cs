@@ -62,7 +62,7 @@ namespace RMS2
             {
 
 
-                Process.Start("powershell.exe", StringTools.StringResasembler(command));
+                Process.Start("pwsh.exe", StringTools.StringResasembler(command));
             }
             catch (System.ComponentModel.Win32Exception)
             {
@@ -71,6 +71,11 @@ namespace RMS2
             }
             Console.ReadKey();
             Console.WriteLine("RMS2: ");
+        }
+        public static void Git(string[] command)
+        {
+            Console.Write("git:");
+            
         }
     }
 }

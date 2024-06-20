@@ -20,8 +20,9 @@ namespace RMS2
                 //help command, shows a list of commands
                 case "hp":
                 case "help":
+                case "show-commands":
                     {
-                        Help.GetHelp();
+                        Help.GetCommands();
                         break;
                     }
                 //quits the programm
@@ -260,6 +261,7 @@ namespace RMS2
                     }
                 //executes something in powershell.exe
                 case "ps:":
+                case "pwsh":
                 case "ps":
                     {
                         WindowsCommandLineIntegration.RunInPowerShell(command);
@@ -300,7 +302,7 @@ namespace RMS2
                         Error.throwTooLittleArgumentError(command, "query");
                         break;
                     }
-                //does currently nothing planned to grant you admin priviledges.
+                //does currently nothing, planned to grant you admin priviledges.
                 case "sudo":
                     {
                         break;
@@ -349,9 +351,20 @@ namespace RMS2
                     {
                         Matrix101.Matrix();
                     }
-                    else
+                    else if (command.Length < 3)
                     {
                         Matrix101.Matrix(StringTools.StringToInt(command[1]));
+                    }
+                    else
+                    {
+                        if (command[2] == "true")
+                        {
+                            Matrix101.Matrix(StringTools.StringToInt(command[1]),true);
+                        }
+                        else
+                        {
+                            Matrix101.Matrix(StringTools.StringToInt(command[1]));
+                        }
                     }
                     break;
                 

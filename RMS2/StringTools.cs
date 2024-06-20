@@ -3,7 +3,7 @@ namespace RMS2
 {
     internal class StringTools
     {
-        public static string StringResasembler(string[] array, int firstEntry = 1,char dividingSign = ' ')
+        public static string StringResasembler      (string[] array, int firstEntry = 1,char dividingSign = ' ')
         {
             string? reasembledString = Variables.GetDefaultVariables(array[firstEntry]);
             if (firstEntry != array.Length - 1)

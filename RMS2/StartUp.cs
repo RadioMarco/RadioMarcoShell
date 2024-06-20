@@ -25,9 +25,10 @@ namespace RMS2
                     Error.throwCustomError("You're using an OperatingSystem other than Windows. Some funktions may won't work properly and software crashes could accure.");
                 }
             
-        }
+        }       
             public static void Commandli()
             {
+            Console.Clear();
             ASCIIWriter.ASCIIWritingMachine(">_<");
                 Console.WriteLine("Commändli.");
 

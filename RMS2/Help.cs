@@ -2,10 +2,10 @@
 {
     internal class Help
     {
-        public static void GetHelp()
+        public static void GetCommands()
         {
-            Console.WriteLine("List of all commands as of V. 2.0");
-            Console.WriteLine("please note that, due to the Codebase being changed, currently the legacy commands of V.1 aren't available. ");
+           // Console.WriteLine("List of all commands as of V. 2.0");
+           //Console.WriteLine("please note that, due to the Codebase being changed, currently the legacy commands of V.1 aren't available. ");
             Console.WriteLine("help:                                Shows this list Predefined Alias: hp");
             Console.WriteLine("exit:                                Ends this programm.");
             Console.WriteLine("log [text]:                          Enables you to write anything into the Log. Ideal in the future for Skripts.");
@@ -25,7 +25,7 @@
             Console.WriteLine("movefile [file] [folder]:            moves a file predefined Alias: mv");
             Console.WriteLine("open <folder>:                       Opens a folder in explorer.exe predefined Alias: ./");
             Console.WriteLine("write [file] [text]:                 writes a given string on the bottom of a file. (if file doesn't exist it creates one) predefined Alias: nano");
-            Console.WriteLine("ps [powershell command]:             executes an Powershell command. (also works with ps:)");
+            Console.WriteLine("ps [powershell command]:             executes an Powershell command. (also works with ps:,pwsh)");
             Console.WriteLine("tune* <tone> <duration> <octave>:    Plays a tune based on the given parameters. ");
             Console.WriteLine("exe [file]                           executes an RMSS(RadioMarcoShellScript) (RMSS made for version 1 may not work properly)");
             Console.WriteLine("*Complex command with many arguments [command] help for more informations");
