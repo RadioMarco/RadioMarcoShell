@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WtuOEGUkcXR/YD7EtSpnw+sjqcytXJxwMEP47Ww1yiq3nCwES2iIlC3j1+6fUl+uCEZO5Pjua+R9R1R34OVh5w==",
+  "dgSpecHash": "5ZmBEL08Hdg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mrezzoli\\source\\repos\\RMS2\\RMS2\\RMS2.csproj",
+  "projectFilePath": "C:\\Users\\radiomarco\\source\\repos\\RadioMarcoShell\\RMS2\\RMS2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mrezzoli\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22621.31\\microsoft.windows.sdk.net.ref.10.0.22621.31.nupkg.sha512"
+    "C:\\Users\\radiomarco\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22621.57\\microsoft.windows.sdk.net.ref.10.0.22621.57.nupkg.sha512"
   ],
   "logs": []
 }

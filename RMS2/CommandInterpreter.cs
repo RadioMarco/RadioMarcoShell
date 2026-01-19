@@ -57,6 +57,7 @@ namespace RMS2
                     }
                 //makes the programm wait for a set of Seconds
                 case "wait":
+                case "sleep":
                     {
                         Wait.waitInterpret(command);
                         break;
@@ -269,6 +270,26 @@ namespace RMS2
                     }
                 //plays a sound
                 case "tune":
+                    {
+                        if (command.Length < 2)
+                        {
+                            Tune.Play();
+                        }
+                        else if (command.Length < 3)
+                        {
+                            Tune.Play(command[1]);
+                        }
+                        else if (command.Length < 4)
+                        {
+                            Tune.Play(command[1],command[2]);
+                        }
+                        else
+                        {
+                            Tune.Play(command[1], command[2], command[3]); 
+                        }
+                        break;
+                       
+                    }
                 // let's you interact with custom variales.
                 case "var":
                     Variables.VarCommandInterpret(command);
